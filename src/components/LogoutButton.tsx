@@ -13,8 +13,8 @@ function LogoutButton() {
 
   const handleLogout = async () => {
     setLoading(true);
-    
-    const {errorMessage} = await logOutAction();
+
+    const { errorMessage } = await logOutAction();
 
     if (!errorMessage) {
       toast.success("Logged out", {

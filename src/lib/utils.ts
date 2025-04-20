@@ -6,9 +6,9 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export const handleError = (error: unknown) => {
-  if (error instanceof Error) { 
-    return {errorMessage: error.message};
-  } else{
-    return {errorMessage: "An error occurred"};
+  if (error instanceof Error) {
+    return { errorMessage: error.message };
+  } else {
+    return { errorMessage: "An error occurred" };
   }
-}
+};

@@ -40,12 +40,12 @@ function AuthForm({ type }: Props) {
       }
 
       if (!errorMessage) {
-        toast.success(title, {description: description});
+        toast.success(title, { description: description });
         router.replace("/");
       } else {
-        toast.error("Error", {description: errorMessage});
+        toast.error("Error", { description: errorMessage });
       }
-    })
+    });
   };
 
   return (

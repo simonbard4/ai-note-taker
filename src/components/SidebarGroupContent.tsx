@@ -6,7 +6,7 @@ type Note = Awaited<ReturnType<typeof prisma.note.findFirst>>;
 
 type Props = {
   notes: Note[];
-}
+};
 
 function SidebarGroupContent({ notes }: Props) {
   console.log(notes);
