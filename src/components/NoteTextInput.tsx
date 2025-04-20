@@ -17,7 +17,7 @@ let updateTimeout: NodeJS.Timeout;
 function NoteTextInput({ noteId, startingNoteText }: Props) {
   const noteIdParam = useSearchParams().get("noteId") || "";
   const { noteText, setNoteText } = useNote();
-  
+
   useEffect(() => {
     if (noteIdParam === noteId) {
       setNoteText(startingNoteText);
